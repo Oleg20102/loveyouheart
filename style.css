@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    overflow:hidden;
+    background:black;
+}
+
+/* СТОРІНКИ */
+.page{
+    width:100%;
+    height:100vh;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.page.active{
+    display:flex;
+}
+
+/* ГОЛОВНА */
+#home{
+    background:linear-gradient(180deg,#000,#120012);
+    color:white;
+}
+
+h1{
+    font-size:40px;
+    margin-bottom:30px;
+    text-shadow:0 0 20px hotpink;
+}
+
+button{
+    padding:15px 40px;
+    border:none;
+    border-radius:30px;
+    background:hotpink;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    box-shadow:0 0 20px hotpink;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+/* HEART PAGE */
+#heartPage{
+    background:black;
+    position:relative;
+    overflow:hidden;
+}
+
+.heart-container{
+    position:relative;
+    width:320px;
+    height:320px;
+}
+
+.heart-text{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.word{
+    position:absolute;
+    color:#ff4da6;
+    font-size:14px;
+    font-weight:bold;
+    text-shadow:
+        0 0 5px #ff4da6,
+        0 0 10px #ff4da6,
+        0 0 20px #ff4da6;
+    animation:fadeIn 2s ease forwards;
+    opacity:0;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity:1;
+    }
+}
